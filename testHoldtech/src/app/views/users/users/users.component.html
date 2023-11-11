@@ -1,4 +1,18 @@
-<p>users works!</p>
-<div class="d-flex justify-content-center mt-4">
-  <button class="btn btn-primary mr-2" (click)="signin()">Signin</button>
+
+<div class="container d-flex justify-content-center mt-4" >
+	<div class="separator-breadcrumb border-top"></div>
+	<div class="col-md-8">
+    <div class="card  mb-2">
+      <div class="card-body text-center">
+        <div class="avatar box-shadow-2 mb-3">
+          <img [src]="image" width="200">
+        </div>
+        <h5 class="m-0">{{ name }}</h5>
+        <p class="mt-0">{{ description }}</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae cumque.</p>
+        <a [href]="linkedin" target="_blank" class="btn btn-primary me-3 ">Ver perfil</a>
+        <button class="btn btn-primary mr-2" (click)="signin()">Regresar</button>
+      </div>
+    </div>
+  </div>
 </div>

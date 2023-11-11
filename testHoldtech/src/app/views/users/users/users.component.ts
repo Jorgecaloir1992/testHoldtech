@@ -9,6 +9,11 @@ import { UsersService } from 'src/app/services/usersServices/users.service';
 })
 export class UsersComponent implements OnInit{
 
+  name = 'Jorge Caloir';
+  description = 'Frontend Developer';
+  image = '/assets/images/photo1.jpg';
+  linkedin = 'https://www.linkedin.com/in/jorge-gregorio-c-a06b20182/';
+
   constructor(
     private router: Router,
     private UsersServices: UsersService
