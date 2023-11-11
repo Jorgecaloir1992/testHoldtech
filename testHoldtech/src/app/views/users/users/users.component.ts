@@ -19,13 +19,17 @@ export class UsersComponent implements OnInit{
     private UsersServices: UsersService
   ){}
 
+  users : any[] = []
+
   ngOnInit(){
     this.getUsers()
+    this.users
   }
 
   getUsers(){
-    this.UsersServices.list().subscribe((data:any) => {
-      console.log(data)
+    this.UsersServices.list().subscribe((data : any) => {
+      this.users = data
+      console.log(this.users, 'hola')
     })
   }
 

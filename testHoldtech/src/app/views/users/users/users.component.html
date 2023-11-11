@@ -15,3 +15,54 @@
     </div>
   </div>
 </div>
+
+<div class="container ">
+  <div class="card mt-4 ">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="table-wrapper">
+            <table [ngStyle]="{'width': '150%'}" class="table table-hover mb-3">
+              <thead class="bg-gray-300">
+                <tr>
+                  <th>ID</th>
+                  <th>Nombre</th>
+                  <th>Nombre de usuario</th>
+                  <th>Direccion</th>
+                  <th>Telefono</th>
+                  <th>Email</th>
+                  <th>Sitio web</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr  *ngFor="let item of users">
+                  <td>
+                    <input class="form-control" value="{{ item.id }}">
+                  </td>
+                  <td>
+                    <input class="form-control" value= "{{ item.name }}">
+                  </td>
+                  <td>
+                    <input class="form-control" value="{{ item.username }}"/>
+                  </td>
+                  <td>
+                    <input class="form-control" value="{{ item.address }}">
+                  </td>
+                  <td>
+                    <input class="form-control" value="{{ item.phone }}">
+                  </td>
+                  <td>
+                    <input  class="form-control" value="{{ item.email }}">
+                  </td>
+                  <td>
+                    <input class="form-control" value="{{ item.website }}">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
