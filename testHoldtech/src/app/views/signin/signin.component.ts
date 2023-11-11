@@ -8,12 +8,7 @@ import { Router } from '@angular/router';
 })
 export class SigninComponent {
 
-  data = [
-    {
-      name: 'Jorge',
-      lastname: 'Caloir'
-    }
-  ]
+  greeting = 'Bienvenidos'
 
   constructor(private router: Router){}
 

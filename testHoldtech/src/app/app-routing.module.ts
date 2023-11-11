@@ -8,7 +8,7 @@ const routes: Routes = [
   {
     path:'users',
     loadChildren: () => import('./views/users/users.module').then(m => m.UsersModule)
-  }
+  },
 ];
 
 @NgModule({

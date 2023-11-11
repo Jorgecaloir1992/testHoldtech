@@ -19,7 +19,6 @@ export class UsersComponent implements OnInit{
     private UsersServices: UsersService
   ){}
 
-
   ngOnInit(){
     this.getUsers()
   }
@@ -28,7 +27,6 @@ export class UsersComponent implements OnInit{
     this.UsersServices.list().subscribe((data:any) => {
       console.log(data)
     })
-
   }
 
   signin() {
