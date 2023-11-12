@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
-    path:'signin',
+    path:'',
     loadChildren: () => import('./views/signin/signin.module').then(m => m.SigninModule)
   },
   {
